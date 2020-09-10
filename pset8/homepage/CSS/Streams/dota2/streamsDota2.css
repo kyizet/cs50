@@ -1,0 +1,23 @@
+#articleContentWrapperOne div{
+	background-image: url(../../../PNGs/Dota2/dota2LogoPng.png);
+}
+
+.articleContentPictures:nth-child(1){
+	background-image: url(../../../Photos/Streams/Dota2/areYouReadyForMiracleVol1/areYouReadyForMiracle4.jpg);	
+}
+
+.articleContentPictures:nth-child(2){
+	background-image: url(../../../Photos/Streams/Dota2/areYouReadyForMiracleVol1/areYouReadyForMiracle3.jpg);	
+}
+
+.articleContentPictures:nth-child(3){
+	background-image: url(../../../Photos/Streams/Dota2/areYouReadyForMiracleVol1/areYouReadyForMiracle2.jpg);	
+}
+
+.articleContentPictures:nth-child(4){
+	background-image: url(../../../Photos/Streams/Dota2/areYouReadyForMiracleVol1/areYouReadyForMiracle1.jpg);	
+}
+
+.articleContentDetails{
+	background-image: url(../../../PNGs/Dota2/dota2Logo.png);
+}

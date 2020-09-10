@@ -1,0 +1,344 @@
+@font-face{
+	font-family: dosis;
+	src: url(../Fonts/Dosis-Medium.otf);
+}
+
+*{
+	margin: 0%;
+	padding: 0%;
+}
+
+body{
+	padding: 0%;
+	margin: 0%;
+	font-family: dosis;
+	background-image: url(../../../Videos/backgroundGIF.gif);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+.navBar{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background-color: rgba(47,47,47,0.75);
+	width: 100%;
+	z-index: 999;
+}
+
+#backKey{
+	position: absolute;
+	background-image: url(../../../PNGs/back.png);
+	background-size: cover;
+	top: 30%;
+	left: 2%;
+	width: 2%;
+	height: 40%;
+}
+.navBar ul li{
+	display: inline-block;
+}
+
+.navBar ul{
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navBar ul li a {
+	color: #d1d1d1;
+	text-decoration: none;
+	display: block;
+	padding: 1.56em 3.13em 1.56em 3.13em;
+	font-size: 1.1vw;
+	font-size: 2vh;
+}
+
+.navBar ul ul {
+	position: absolute;
+}
+
+.navBar ul ul li{
+	display: none;
+	text-align: left;
+	background-color: rgba(47,47,47,0.75);
+	padding: 0%;
+	margin: 0%;
+}
+
+.navBar ul li:hover{
+	text-decoration: underline;
+}
+
+.navBar ul li:hover > ul li{
+	display: block;
+}
+
+.content{
+	height: 140%;
+	width: 100%;
+	position: absolute;
+	top: 8%;
+	left: 0;
+	border: 0.06em rgba(0,0,0,0) solid;
+}
+
+
+
+/*footer*/
+#footerWrapper{
+	background-color: rgba(36,36,36,1);
+	position: absolute;
+	width: 100%;
+	bottom: -70%;
+	height: 15%;
+	background-image: url(../../../Photos/footerIMG.jpg);
+	min-width: 100%;
+	min-height: 15%;
+}
+
+#footer1{
+	height: 100%;
+	width: 20%;
+	position: absolute;
+	bottom: 0;
+}
+#footer1 p{
+	color: #525985;
+}
+
+#CR{
+	font-size: 100%;
+	margin: 0%;
+	position: absolute;
+	bottom: 0%;
+}
+#footer2{
+	height: 100%;
+	width: 20%;
+	position: absolute;
+	left: 43%;
+	background-image: url(../../../PNGs/Logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#footer3{
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	height: 100%;
+	width: 40%;
+}
+
+#footer3 ul{
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+}
+#footer3 ul li{
+	padding: 0 1.25em 0 1.25em;
+	list-style: none;
+	display: inline-block;
+	
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2a2a2a; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #959595; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d5d5d5; 
+}
+#articleContentWrapper{
+	border: 0.06em rgba(0,0,0,0) solid;
+	height: 90%;
+	width: 62.5%;
+	bottom: 0;
+	left: 7.5%;
+	position: absolute;	
+	background-size: cover;
+}
+#articleContentWrapperOne{
+	background-color: rgba(50,50,50,0.8);
+	width: 100%;
+	height: 10%;
+	border-bottom: 1px rgba(40,40,40,0.8) dashed;
+}
+#articleContentWrapperOne span{
+	color: #fff;
+	font-size: 50px;
+	position: absolute;
+	top: 25px;
+	left: 50px;
+	font-weight: 200;
+	font-style: oblique;
+}
+#unicorn{
+	position: absolute;
+	width: 120px;
+	height: 100px;
+	right: 0;
+	background-size: cover;
+	background-image: url(../../../GIFs/unicorn.png);
+	cursor: pointer;
+}
+#hearts{
+	position: absolute;
+	width: 2000px;
+	height: 100px;
+	right: 0;
+	background-size: cover;
+	background-image: url("../../../GIFs/hearts.gif");
+	display: none;
+}
+#articleContentWrapperTwo{
+	width: 100%;
+	height: 87%;
+	border: 1px rgba(0,0,0,0) solid;
+	background-color: rgba(35,35,35,0.8);
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-size: cover;
+	position: absolute;
+	background-image: url(../../../PNGs/Poems/backgroundPoems.png);
+}
+#articleContentWrapperTwo:hover{
+	overflow-y: scroll;
+}
+#heartsContent{
+	background-image: url(../../../GIFs/heartsContent.gif);
+	background-size: cover;
+	position: absolute;
+	width: 120%;
+	height: 100%;
+	left: -80px;
+	display: none;
+}
+#articleContentWrapperTwo p{
+	color: #fff;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 200;
+	word-spacing: 10px;
+	padding-left: 50px;
+	padding-top: 100px;
+}
+#articleContentWrapperTwo span{
+	color: #fff;
+	font-size: 25px;
+	font-style: italic;
+	font-weight: 400;
+	word-spacing 10px;
+	right: -600px;
+	position: relative;
+}
+.articleContentPhoto{
+	border: 1px rgba(0,0,0,0) solid;
+	width: 100%;
+	height: 40%;
+	background-size: cover;
+}
+.articleContentDetails{
+	border: 1px rgba(50,50,50,0.8) solid;
+	background-color: rgba(50,50,50,0.8);
+	width: 100%;
+	height: 53%;
+	position: absolute;
+	padding-left: 20px;
+	background-size: cover;
+}
+.articleContentDetails p{
+	color: #fff;
+	text-indent: 60px;
+	font-size: 25px;
+	word-spacing: 10px;
+}
+.articleContentDetails button{
+	border: 1px #acacac solid;
+	background-color: rgba(80,80,80,0.3);
+	color: #fff;
+	font-size: 20px;
+	width: 200px;
+	height: 50px;
+	position: relative;
+	left: 300px;
+	cursor: pointer;
+}
+#articleListWrapper{
+	border: 1px rgba(0,0,0,0) solid;
+	height: 90%;
+	width: 23%;
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+}
+#articleListHeader{
+	background-color: rgba(10,10,10,0.8);
+	width: 100%;
+	height: 7%;
+}
+#articleListHeader span{
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+}
+#articleListContents{
+	background-color: rgba(24,24,24,0.8);
+	width: 100%;
+	height: 90%;
+}
+.articleListContentHeader{
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 7%;
+}
+.articleListContentHeader span{
+	color: #fff;
+	font-size: 30px;
+	position: relative;
+	left: 10px;
+	top: 10px;
+}
+.articleListContentHeader span > a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+.articleListContentHeader span > a:hover{
+	text-shadow: 0px 0px 50px #fff;
+}
+.articleListContentHeader div{
+	position: relative;
+	background-image: url(../../../PNGs/dropDownIcon.png);
+	background-size: cover;
+	width: 20%;
+	height: 100%;
+	top: -40px;
+	right: -260px;
+	cursor: pointer;
+}
+.articleListContentDetail{
+	border-top: 0.5px rgba(40,40,40,1) dashed;
+	width: 100%;
+	height: 140px;
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+}
+.articleListContentDetail span{
+	color: #fff;
+	font-size: 20px;
+	word-spacing: 10px;
+	padding-left: 20px;
+}

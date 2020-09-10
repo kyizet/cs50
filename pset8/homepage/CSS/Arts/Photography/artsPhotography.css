@@ -1,0 +1,24 @@
+#articleContentWrapperOne div{
+	background-image: url(../../../PNGs/Photography/camera.png);
+}
+
+.articleContentPictures:nth-child(1){
+	background-image: url(../../../Photos/Photography/NightLife/photographyNightLife4.jpg);
+}
+
+.articleContentPictures:nth-child(2){
+	background-image: url(../../../Photos/Photography/NightLife/photographyNightLife3.jpg);
+}
+
+.articleContentPictures:nth-child(3){
+	background-image: url(../../../Photos/Photography/NightLife/photographyNightLife2.jpg);
+}
+
+.articleContentPictures:nth-child(4){
+	background-image: url(../../../Photos/Photography/NightLife/photographyNightLife1.jpg);
+}
+
+.articleContentDetails{
+	background-image: url(../../../PNGs/Photography/lensFlare.png);
+}
+

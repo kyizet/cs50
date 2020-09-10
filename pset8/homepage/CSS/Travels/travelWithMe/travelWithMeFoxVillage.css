@@ -1,0 +1,24 @@
+#articleContentWrapperOne div{
+	background-image: url(../../../GIFs/fox.gif);
+}
+
+.articleContentPictures:nth-child(1){
+	background-image: url(../../../Photos/Travels/TravelWithMe/FoxVillage/FoxVillage4.jpg);
+}
+
+.articleContentPictures:nth-child(2){
+	background-image: url(../../../Photos/Travels/TravelWithMe/FoxVillage/FoxVillage3.jpg);
+}
+
+.articleContentPictures:nth-child(3){
+	background-image: url(../../../Photos/Travels/TravelWithMe/FoxVillage/FoxVillage2.jpg);
+}
+
+.articleContentPictures:nth-child(4){
+	background-image: url(../../../Photos/Travels/TravelWithMe/FoxVillage/FoxVillage1.jpg);
+}
+
+.articleContentDetails{
+	background-image: url(../../../PNGs/Travels/TravelWithMe/FoxVillage/foxVillage.png);
+}
+

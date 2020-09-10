@@ -1,0 +1,349 @@
+@font-face{
+	font-family: dosis;
+	src: url(../Fonts/Dosis-Medium.otf);
+}
+
+*{
+	margin: 0%;
+	padding: 0%;
+}
+
+body{
+	padding: 0%;
+	margin: 0%;
+	font-family: dosis;
+	background-image: url(../Videos/backgroundGIF.gif);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+.navBar{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background-color: rgba(47,47,47,0.75);
+	width: 100%;
+	z-index: 999;
+}
+
+#backKey{
+	position: absolute;
+	background-image: url(../PNGs/back.png);
+	background-size: cover;
+	top: 30%;
+	left: 2%;
+	width: 2%;
+	height: 40%;
+}
+.navBar ul li{
+	display: inline-block;
+}
+
+.navBar ul{
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navBar ul li a {
+	color: #d1d1d1;
+	text-decoration: none;
+	display: block;
+	padding: 1.56em 3.13em 1.56em 3.13em;
+	font-size: 1.1vw;
+	font-size: 2vh;
+}
+
+.navBar ul ul {
+	position: absolute;
+}
+
+.navBar ul ul li{
+	display: none;
+	text-align: left;
+	background-color: rgba(47,47,47,0.75);
+	padding: 0%;
+	margin: 0%;
+}
+
+.navBar ul li:hover{
+	text-decoration: underline;
+}
+
+.navBar ul li:hover > ul li{
+	display: block;
+}
+
+.content{
+	height: 140%;
+	width: 100%;
+	position: absolute;
+	top: 8%;
+	left: 0;
+	border: 0.06em rgba(0,0,0,0) solid;
+}
+
+
+
+/*footer*/
+#footerWrapper{
+	background-color: rgba(36,36,36,1);
+	position: absolute;
+	width: 100%;
+	bottom: -70%;
+	height: 15%;
+	background-image: url(../Photos/footerIMG.jpg);
+	opacity: 0.8;
+	min-width: 100%;
+	min-height: 15%;
+}
+
+#footer1{
+	height: 100%;
+	width: 20%;
+	position: absolute;
+	bottom: 0;
+}
+#footer1 p{
+	color: #525985;
+}
+
+#CR{
+	font-size: 100%;
+	margin: 0%;
+	position: absolute;
+	bottom: 0%;
+}
+#footer2{
+	height: 100%;
+	width: 20%;
+	position: absolute;
+	left: 43%;
+	background-image: url(../PNGs/Logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#footer3{
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	height: 100%;
+	width: 40%;
+}
+
+#footer3 ul{
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+}
+#footer3 ul li{
+	padding: 0 1.25em 0 1.25em;
+	list-style: none;
+	display: inline-block;
+	
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2a2a2a; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #959595; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d5d5d5; 
+}
+#articleContentWrapper{
+	border: 0.06em rgba(0,0,0,0) solid;
+	height: 90%;
+	width: 62.5%;
+	bottom: 0;
+	left: 7.5%;
+	position: absolute;	
+	background-size: cover;
+}
+#articleContentWrapperOne{
+	background-color: rgba(50,50,50,0.8);
+	width: 100%;
+	height: 10%;
+	border-bottom: 1px rgba(40,40,40,0.8) dashed;
+}
+#articleContentWrapperOne span{
+	color: #fff;
+	font-size: 2vw;
+	font-size: 6vh;
+	position: absolute;
+	top: 3%;
+	left: 1%;
+}
+#articleContentWrapperOne div{
+	position: absolute;
+	width: 15%;
+	height: 10%;
+	right: 1%;
+	background-size: cover;
+}
+#articleContentWrapperTwo{
+	width: 100%;
+	height: 85%;
+	border: 1px rgba(0,0,0,0) solid;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-size: cover;
+}
+#articleContentWrapperTwo:hover{
+	overflow-y: 
+		
+}
+.articleContentPhoto{
+	border: 1px rgba(0,0,0,0) solid;
+	background-color: rgba(35,35,35,0.8);
+	width: 100%;
+	height: 40%;
+	background-size: cover;
+}
+
+.articleContentPictures{
+	background-size: cover;
+	width: 65%;
+	height: 30%;
+	left: 18%;
+	top: 12%;
+	position: absolute;
+	animation-duration: 12s;
+	animation-name: slidingSlides;
+	animation-iteration-count: infinite;
+}
+@keyframes slidingSlides {
+	0%{opacity: 1;}
+	30%{opacity: 1;}
+	3.00001%{opacity: 0;}
+	50%{opacity: 0;}
+	75%{opacity: 0;}
+	100%{opacity: 0;}
+}
+.articleContentPictures:nth-child(1){
+	animation-delay: 8s;
+}
+.articleContentPictures:nth-child(2){
+	animation-delay: 5s;
+}
+.articleContentPictures:nth-child(3){
+	animation-delay: 2s;
+}
+.articleContentPictures:nth-child(4){
+	animation-delay: -1s;
+}
+.articleContentDetails{
+	border: 1px rgba(50,50,50,0.8) solid;
+	background-color: rgba(50,50,50,0.8);
+	width: 100%;
+	height: 53%;
+	position: absolute;
+	padding-left: 1%;
+	background-size: cover;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding-bottom: 3%;
+}
+.articleContentDetails:hover{
+	overflow-y: scroll;
+}
+.articleContentDetails p{
+	color: #fff;
+	text-indent: 15%;
+	font-size: 2vw;
+	font-size: 3vh;
+	word-spacing: 100%;
+}
+.articleContentDetails button{
+	border: 0.06em #acacac solid;
+	background-color: rgba(80,80,80,0.3);
+	color: #fff;
+	font-size: 2vw;
+	font-size: 3.5vh;
+	width: 25%;
+	height: 10%;
+	position: relative;
+	left: 35%;
+	cursor: pointer;
+}
+#articleListWrapper{
+	border: 0.06em rgba(0,0,0,0) solid;
+	height: 90%;
+	width: 23%;
+	position: absolute;
+	bottom: 0;
+	right: 7%;
+}
+#articleListHeader{
+	background-color: rgba(10,10,10,0.8);
+	width: 100%;
+	height: 7%;
+}
+#articleListHeader span{
+	color: #fff;
+	font-size: 2vw;
+	font-size: 4vh;
+	position: absolute;
+	top: 2%;
+	left: 10%;
+}
+#articleListContents{
+	background-color: rgba(24,24,24,0.8);
+	width: 100%;
+	height: 90%;
+}
+.articleListContentHeader{
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 7%;
+}
+.articleListContentHeader span{
+	color: #fff;
+	font-size: 2vw;
+	font-size: 4vh;
+	position: relative;
+	left: 3%;
+	top: 30%;
+}
+.articleListContentHeader span > a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 2vw;
+	font-size: 3vh;
+}
+.articleListContentHeader span > a:hover{
+	text-shadow: 0px 0px 1em #fff;
+}
+.articleListContentHeader div{
+	position: relative;
+	background-image: url(../PNGs/dropDownIcon.png);
+	background-size: cover;
+	width: 20%;
+	height: 100%;
+	top: -80%;
+	right: -80%;
+	cursor: pointer;
+}
+.articleListContentDetail{
+	border-top: 0.5px rgba(40,40,40,1) dashed;
+	width: 100%;
+	height: 15%;
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+	padding-left: 3%;
+}
+.articleListContentDetail span{
+	color: #fff;
+	font-size: 2vw;
+	font-size: 2.5vh;
+	word-spacing: 100%;
+}

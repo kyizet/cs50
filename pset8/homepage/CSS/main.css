@@ -1,0 +1,394 @@
+@font-face{
+	font-family: dosis;
+	src: url(../Fonts/Dosis-Medium.otf);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body{
+	width: 100%;
+}
+body{
+	padding: 0%;
+	margin: 0%;
+	font-family: dosis;
+	width: 100%;
+	height: 100%;
+	background-image: url(../Videos/backgroundGIF.gif);
+	background-size: cover;
+}
+
+.navBar{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	background-color: rgba(47,47,47,0.75);
+	width: 100%;
+	height: 8.5%;
+	z-index: 999;
+}
+.navBar ul li{
+	display: inline-block;
+	font-size: 1.1vw;
+	font-size: 2vh;
+}
+
+.navBar ul{
+	text-align: center;
+	list-style-type: none;
+	padding: 0%;
+	margin: 0%;
+}
+
+.navBar ul li a {
+	color: #d1d1d1;
+	text-decoration: none;
+	display: block;
+	padding: 1.56em 3.13em 1.56em 3.13em;
+	font-size: 1.1vw;
+	font-size: 2vh;
+}
+
+.navBar ul ul {
+	position: absolute;
+}
+
+.navBar ul ul li{
+	display: none;
+	text-align: left;
+	background-color: rgba(47,47,47,0.75);
+	padding: 0;
+	margin: 0;
+}
+
+.navBar ul li:hover{
+	text-decoration: underline;
+}
+
+.navBar ul li:hover > ul li{
+	display: block;
+}
+
+.content{
+	height: 86%;
+	width: 100%;
+	position: absolute;
+	top: 8.5%;
+	left: 0;
+	min-height: 86%;
+	min-width: 100%;
+}
+
+
+
+/*footer*/
+#footerWrapper{
+	position: absolute;
+	width: 100%;
+	bottom: -10%;
+	height: 15%;
+	background-image: url(../Photos/footerIMG.jpg);
+	opacity: 0.8;
+}
+
+#footer1{
+	height: 100%;
+	width: 20%;
+	position: absolute;
+	bottom: 0%;
+}
+#footer1 p{
+	color: #525985;
+}
+
+#CR{
+	font-size: 100%;
+	margin: 0%;
+	position: absolute;
+	bottom: 0%;
+}
+#footer2{
+	height: 100%;
+	width: 20%;
+	position: absolute;
+	left: 45%;
+	background-image: url(../PNGs/Logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#footer3{
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	height: 100%;
+	width: 40%;
+}
+
+#footer3 ul{
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+}
+#footer3 ul li{
+	padding: 0 1.25em 0 1.25em;
+	list-style: none;
+	display: inline-block;
+}
+
+@keyframes slidingSlides {
+	0%{opacity: 1;}
+	30%{opacity: 1;}
+	31%{opacity: 0;}
+	50%{opacity: 0;}
+	75%{opacity: 0;}
+	100%{opacity: 0;}
+}
+@keyframes scaler{
+	0%{transform: scale(1);}
+	25%{transform: scale(1.05);}
+	50%{transform: scale(1.1);}
+	75%{transform: scale(1.05);}
+	100%{transform: scale(1)}
+}
+/*slider 1*/
+#slider1 > slide {
+	border-left: 0.63em #3f3f3f solid;
+	border-right: 0.63em #3f3f3f solid;
+	width: 17%;
+	height: 33%;
+	position: absolute;
+	left: 21%;
+	top: 13%;
+}
+
+#slider1 span{
+	color: #fff;
+	position: absolute;
+	left: 20%;
+	top: 35%;
+	font-size: 6vh;
+	font-size: 3vw;
+}
+#slider1:hover span{
+	animation-name: scaler;
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+	animation-delay: 0s;
+}
+#slider1:hover slide{
+	animation-name: slidingSlides;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+#slider1 slide:nth-child(1){
+	background-image: url(../Photos/Travels/travelChina.jpg);
+	background-size: cover;
+}
+#slider1:hover slide:nth-child(1){
+	animation-delay: 1s;
+}
+#slider1 slide:nth-child(2){
+	background-image: url(../Photos/Travels/travelFrance.jpg);
+	background-size: cover;
+}
+#slider1:hover slide:nth-child(2){
+	animation-delay: 0.5s;
+}
+
+#slider1 slide:nth-child(3){
+	background-image: url(../Photos/Travels/travelNewYork.jpg);
+	background-size: cover;
+}
+#slider1:hover slide:nth-child(3){
+	animation-delay: 0s;
+}
+#slider1 slide:nth-child(4){
+	background-image: url(../Photos/Travels/travelSingapore.jpg);
+	background-size: cover;
+}
+#slider1:hover slide:nth-child(4){
+	animation-delay: -0.5s;
+}
+/*slider 1 end*/
+/*slider 2 start*/
+#slider2 > slide {
+	border-left: 10px #3f3f3f solid;
+	border-right: 10px #3f3f3f solid;
+	width: 17%;
+	height: 33%;
+	position: absolute;
+	right: 21%;
+	top: 13%;
+}
+
+#slider2 span{
+	color: #fff;
+	position: absolute;
+	left: 4%;
+	top: 35%;
+	font-size: 4.5vh;
+	font-size: 3vw;
+}
+#slider2:hover span{
+	animation-name: scaler;
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+	animation-delay: 0s;
+}
+#slider2:hover slide{
+	animation-name: slidingSlides;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+#slider2 slide:nth-child(1){
+	background-image: url(../Photos/Photography/photographyIndoor.jpg);
+	background-size: cover;
+}
+#slider2:hover slide:nth-child(1){
+	animation-delay: 1s;
+}
+#slider2 slide:nth-child(2){
+	background-image: url(../Photos/Photography/photographyNature.jpg);
+	background-size: cover;
+}
+#slider2:hover slide:nth-child(2){
+	animation-delay: 0.5s;
+}
+
+#slider2 slide:nth-child(3){
+	background-image: url(../Photos/Photography/photographyNightLife.jpg);
+	background-size: cover;
+}
+#slider2:hover slide:nth-child(3){
+	animation-delay: 0s;
+}
+#slider2 slide:nth-child(4){
+	background-image: url(../Photos/Photography/photographyWedding.jpg);
+	background-size: cover;
+}
+#slider2:hover slide:nth-child(4){
+	animation-delay: -0.5s;
+}
+/*slider 2 end*/
+/*slider 3 start*/
+#slider3 > slide {
+	border-left: 10px #3f3f3f solid;
+	border-right: 10px #3f3f3f solid;
+	width: 17%;
+	height: 33%;
+	position: absolute;
+	left: 21%;
+	bottom: 13%;
+}
+
+#slider3 span{
+	color: #fff;
+	position: absolute;
+	left: 25%;
+	top: 35%;
+	font-size: 5vh;
+	font-size: 3vw;
+}
+#slider3:hover span{
+	animation-name: scaler;
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+	animation-delay: 0s;
+}
+#slider3:hover slide{
+	animation-name: slidingSlides;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+#slider3 slide:nth-child(1){
+	background-image: url(../Photos/Poems/poemRomance.jpg);
+	background-size: cover;
+}
+#slider3:hover slide:nth-child(1){
+	animation-delay: 1s;
+}
+#slider3 slide:nth-child(2){
+	background-image: url(../Photos/Poems/poemsEducational.jpg);
+	background-size: cover;
+}
+#slider3:hover slide:nth-child(2){
+	animation-delay: 0.5s;
+}
+
+#slider3 slide:nth-child(3){
+	background-image: url(../Photos/Poems/poemsEncouraging.jpg);
+	background-size: cover;
+}
+#slider3:hover slide:nth-child(3){
+	animation-delay: 0s;
+}
+#slider3 slide:nth-child(4){
+	background-image: url(../Photos/Poems/poemDev..jpg);
+	background-size: cover;
+}
+#slider3:hover slide:nth-child(4){
+	animation-delay: -0.5s;
+}
+/*slider 3 end*/
+/*slider 4 start*/
+#slider4 > slide {
+	border-left: 10px #3f3f3f solid;
+	border-right: 10px #3f3f3f solid;
+	width: 17%;
+	height: 33%;
+	position: absolute;
+	right: 21%;
+	bottom: 13%;
+}
+
+#slider4 span{
+	color: #fff;
+	position: absolute;
+	left: 6%;
+	top: 35%;
+	font-size: 5vh;
+	font-size: 3vw;
+}
+#slider4:hover span{
+	animation-name: scaler;
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+	animation-delay: 0s;
+}
+#slider4:hover slide{
+	animation-name: slidingSlides;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+#slider4 slide:nth-child(1){
+	background-image: url(../Photos/Streams/livestreamsCSGO.jpg);
+	background-size: cover;
+}
+#slider4:hover slide:nth-child(1){
+	animation-delay: 1s;
+}
+#slider4 slide:nth-child(2){
+	background-image: url(../Photos/Streams/livestreamsDota2.jpg);
+	background-size: cover;
+}
+#slider4:hover slide:nth-child(2){
+	animation-delay: 0.5s;
+}
+
+#slider4 slide:nth-child(3){
+	background-image: url(../Photos/Streams/livestreamsFortnite.jpg);
+	background-size: cover;
+}
+#slider4:hover slide:nth-child(3){
+	animation-delay: 0s;
+}
+#slider4 slide:nth-child(4){
+	background-image: url(../Photos//Streams/livestreamsWOW.jpg);
+	background-size: cover;
+}
+#slider4:hover slide:nth-child(4){
+	animation-delay: -0.5s;
+}
+/*slide 4 end*/

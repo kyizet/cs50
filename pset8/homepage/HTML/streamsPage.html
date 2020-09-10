@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<title>Personal VLOG | Zet's</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../CSS/streamsPage.css">
+<script src="../JS/jquery.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<nav class="navBar">
+	<ul>
+		<li>
+			<a href="../index.html">Home</a>
+		</li><li>
+		
+		
+			<a href="travelsPage.html">Travels</a>
+				<ul>
+					<li><a href="../HTML/Travels/TravelWithMe/travelsPageInsideTravelWithMe.html">Travel with me</a></li>
+					<li><a href="../HTML/Travels/TravelledTravels/travelsPageInsideTravelledTravels.html">My travelled travels</a></li>
+				</ul>
+		</li><li>
+		
+			<a href="artsPage.html">Arts</a>
+				<ul>
+					<li><a href="Arts/Photography/artsPhotography.html">Photography</a></li>
+					<li><a href="../HTML/Arts/Poems/artsPoems.html">Poems</a></li>
+				</ul>
+		</li><li>
+		
+			<a href="streamsPage.html">Streams</a>
+				<ul>
+					<li><a href="../HTML/Streams/Dota2/streamsDota2.html">Dota2</a></li>
+					<li><a href="#">WoW</a></li>
+					<li><a href="#">CS:GO</a></li>
+					<li><a href="#">Fortnite</a></li>
+				</ul>
+		</li><li>
+			
+		
+			<a href="partnersPage.html">Partners</a>
+				<ul>
+					<li><a href="advertise.html">Advertise</a></li>
+					<li><a href="hireMe.html">Hire me</a></li>
+				</ul>
+		</li>
+	</ul>
+</nav>
+	
+
+	<content class="content">
+		<article id="articleOne" onmouseover="articleOneTransition()">
+			<a href="../HTML/Streams/Dota2/streamsDota2.html"><div id="articleOneDivOne" >
+				<h1>Dota 2</h1></div></a>
+			<div id="articleOneDivTwo">
+				<video muted loop autoplay onclick="playPause1()" id="dota2Video">
+				<source src="../Videos/Dota2.mp4" type="video/mp4">
+				</video>
+			</div>
+			</article>
+		
+		<article id="articleTwo" onmouseover="articleTwoTransition()">
+				<a href="#"><div id="articleTwoDivOne">
+				<h1>WoW</h1></div></a>
+			<div id="articleTwoDivTwo">
+			<video muted loop autoplay onclick="playPause2()" id="wowVideo">
+				<source src="../Videos/WoW.mp4" type="video/mp4">
+				</video>
+			</div>
+			</article>
+		
+		<article id="middleArticle">
+			<div id="middleArticleDivOne">
+				<h1>Popular Streams</h1></div>
+			<div class="middleArticleDivTwo">
+				<div class="streamText"><a href="../HTML/Streams/Dota2/streamsDota2.html"><h1 class="textStream">Dota 2</h1></a>
+					<div class="dropArrow" id="dropArrow1"></div></div>
+				<div class="streamContent" id="dotaTwo1Content">
+					<video muted autoplay loop onclick="playPausevideoDotaTwo1()" id="dotaTwo1">
+					<source src="../Videos/Dota_2/Miracle-_Tribute.mp4" type="video/mp4">
+					</video>
+				</div>
+				
+				<div class="streamText"><a href="#"><h1 class="textStream">WoW Tournament</h1></a>
+					<div class="dropArrow" id="dropArrow2"></div></div>
+				<div class="streamContent" id="wow1Content">
+					<video muted autoplay loop onclick="playPausewow1()" id="wow1">
+					<source src="../Videos/WoW/WoWTournament.mp4" type="video/mp4">
+					</video>
+				</div>
+				
+				<div class="streamText"><a href="#"><h1 class="textStream">CS:GO Tournament</h1></a>
+					<div class="dropArrow" id="dropArrow3"></div></div>
+				<div class="streamContent" id="csgo1Content">
+					<video muted autoplay loop onclick="playPauseCsgo1()" id="csgo1">
+					<source src="../Videos/CSGO/CSGO_Tournament.mp4" type="video/mp4">
+					</video>
+				</div>
+				
+				<div class="streamText"><a href="#"><h1 class="textStream">Fortnite Tournament</h1></a>
+					<div class="dropArrow" id="dropArrow4"></div></div>
+				<div class="streamContent" id="fortnite1Content">
+					<video muted autoplay loop onclick="playPauseFortnite1()" id="fortnite1">
+					<source src="../Videos/Fortnite/Fortnite_Tournament.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			</article>
+		
+		<article id="articleThree" onmouseover="articleThreeTransition()">
+			<a href="#"><div id="articleThreeDivOne">
+				<h1>CS:GO</h1>
+				</div></a>
+			<div id="articleThreeDivTwo">
+			<video muted loop autoplay onclick="playPause3()" id="csgoVideo">
+				<source src="../Videos/CSGO.mp4" type="video/mp4">
+				</video>
+			</div>
+			</article>
+		
+		<article id="articleFour" onmouseover="articleFourTransition()">
+			<a href="#"><div id="articleFourDivOne">
+				<h1>Fortnite</h1></div></a>
+			<div id="articleFourDivTwo">
+			<video muted loop autoplay onclick="playPause4()" id="fortniteVideo">
+				<source src="../Videos/Fortnite.mp4" type="video/mp4">
+				</video>
+			</div>
+			</article>
+	</content>
+	<footer id="footerWrapper">
+		<div id="footer1"><p id="CR">Copyright 2018</p></div>
+		<a href="../index.html"><div id="footer2"></div></a>
+		<div id="footer3">
+			<ul>
+				<li><a href="mailto:zet11zet@icloud.com"><img src="../PNGs/emailPNG.png"></a></li>
+				<li><a href="https://www.instagram.com/humano_mierda/?hl=en" target="_blank"><img src="../PNGs/instagramPNG.png"></a>	</li>
+				<li><a href="https://twitter.com/zetzinzet" target="_blank"><img src="../PNGs/twitterPNG.png"></a></li>
+			</ul>
+		</div>
+	</footer>
+
+
+</div>	
+	<script src="../JS/StreamsActionsBody.js"></script>
+</body>	
+</html>
